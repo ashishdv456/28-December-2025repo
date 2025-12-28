@@ -1,0 +1,12 @@
+trigger: none
+pool   : Dec22agent
+stages:
+  - stage: 
+    displayName: terraform_tool
+    jobs:
+      - job: 
+        steps:
+        - task: TerraformInstaller@1
+          inputs:
+            terraformVersion: 'latest'
+    
